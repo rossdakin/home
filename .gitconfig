@@ -1,0 +1,34 @@
+[user]
+	name = Ross Dakin
+	email = rossdakin@gmail.com
+[core]
+	excludesfile = ~/.gitignore
+[color]
+	ui = auto
+[alias]
+	a = add
+	ap = add --patch
+	b = branch
+        c = cherry -v production/master upstream/master
+	ci = commit
+	co = checkout
+        cp = cherry-pick
+	d = diff
+	dc = diff --cached
+        g = grep -n --head --break
+        l = log --graph --all --oneline --decorate --tags
+        pop = stash pop
+        pum = pull upstream master
+        prum = pull --rebase upstream master
+	r = rebase
+	rc = rebase --continue
+        rium = rebase --interactive upstream/master
+	s = status -sb
+        up = remote -v update --prune
+[merge]
+	conflictstyle = diff3
+[push]
+        default = tracking
+[filter "media"]
+	clean = git-media-clean %f
+	smudge = git-media-smudge %f
