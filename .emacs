@@ -4,7 +4,6 @@
 (setq initial-scratch-message nil)
 (setq-default indent-tabs-mode nil)
 (add-to-list 'load-path "~/.emacs.d/site-lisp/")
-(setq exec-path (cons (expand-file-name "~/.rvm/gems/ruby-1.9.3-p385/bin") exec-path))
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 
 ;; set up unicode
@@ -12,9 +11,7 @@
 (set-default-coding-systems 'utf-8)
 (set-terminal-coding-system 'utf-8)
 (set-keyboard-coding-system 'utf-8)
-;; This from a japanese individual.  I hope it works.
 (setq default-buffer-file-coding-system 'utf-8)
-;; From Emacs wiki
 (setq x-select-request-type '(UTF8_STRING COMPOUND_TEXT TEXT STRING))
 
 (add-to-list 'auto-mode-alist '("\\.rake$" . ruby-mode))
