@@ -14,7 +14,8 @@ cd ~/
 git init
 git remote add origin git@github.com:rossdakin/home.git
 git pull origin master
+git branch --set-upstream-to=origin/master master
 ```
 
 Things to do after cloning:
- * Source the git bash stuff as described here: https://github.com/git/git/blob/master/contrib/completion/git-completion.bash
+ * Be happy
