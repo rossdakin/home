@@ -28,7 +28,7 @@
 [merge]
 	conflictstyle = diff3
 [push]
-        default = tracking
+        default = simple
 [filter "media"]
 	clean = git-media-clean %f
 	smudge = git-media-smudge %f

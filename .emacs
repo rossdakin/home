@@ -5,6 +5,7 @@
 (setq-default indent-tabs-mode nil)
 (add-to-list 'load-path "~/.emacs.d/site-lisp/")
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
+(column-number-mode 1)
 
 ;; set up unicode
 (prefer-coding-system       'utf-8)
