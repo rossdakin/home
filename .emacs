@@ -23,6 +23,9 @@
 (require 'dart-mode)
 (add-to-list 'auto-mode-alist '("\\.dart$" . dart-mode))
 
+(require 'coffee-mode)
+(add-to-list 'auto-mode-alist '("\\.coffee$" . coffee-mode))
+
 (require 'sass-mode)
 (require 'scss-mode)
 (autoload 'scss-mode "scss-mode")
