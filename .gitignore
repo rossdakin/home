@@ -1,5 +1,18 @@
+# Ignore everything by default:
+*
+
+# Allow only dot-files:
+!\.*
+
+# But not these dot-files:
+\.DS_Store
+\.ssh
+\.*history
+\.CFUserTextEncoding
+\.netrc
+\.yarnrc
+
+# Ignore all cruft:
 *~
 \#*#
-.#*
-.DS_Store
-.ssh
+\.#*

@@ -14,3 +14,4 @@ alias gri='grep --color -ir --exclude=*~ --exclude=#*# --exclude=*.pyc --exclude
 
 # windows
 alias win='~/scripts/ec2-kickstart/ec2-kickstart.pl'
+eval "$(rbenv init -)"

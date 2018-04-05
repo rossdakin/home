@@ -15,23 +15,6 @@
 (setq default-buffer-file-coding-system 'utf-8)
 (setq x-select-request-type '(UTF8_STRING COMPOUND_TEXT TEXT STRING))
 
-(add-to-list 'auto-mode-alist '("\\.rake$" . ruby-mode))
-
-(require 'git)
-(require 'git-blame)
-
-(require 'dart-mode)
-(add-to-list 'auto-mode-alist '("\\.dart$" . dart-mode))
-
-(require 'coffee-mode)
-(add-to-list 'auto-mode-alist '("\\.coffee$" . coffee-mode))
-
-(require 'sass-mode)
-(require 'scss-mode)
-(autoload 'scss-mode "scss-mode")
-(add-to-list 'auto-mode-alist '("\\.scss$" . scss-mode))
-(setq scss-compile-at-save nil)
-
 (require 'yaml-mode)
 (add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode))
 
