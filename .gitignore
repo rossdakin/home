@@ -11,6 +11,9 @@
 \.CFUserTextEncoding
 \.netrc
 \.yarnrc
+\.lesshst
+\.flutter
+\.emulator_console_auth_token
 
 # Ignore all cruft:
 *~
