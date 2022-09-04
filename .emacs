@@ -3,34 +3,11 @@
 (setq inhibit-splash-screen t)
 (setq initial-scratch-message nil)
 (setq-default indent-tabs-mode nil)
-(add-to-list 'load-path "~/.emacs.d/site-lisp/")
-(add-hook 'before-save-hook 'delete-trailing-whitespace)
 (column-number-mode 1)
 
-;; set up unicode
+;; set up unicode                                                                                                                                                                                                      
 (prefer-coding-system       'utf-8)
 (set-default-coding-systems 'utf-8)
 (set-terminal-coding-system 'utf-8)
 (set-keyboard-coding-system 'utf-8)
 (setq default-buffer-file-coding-system 'utf-8)
-(setq x-select-request-type '(UTF8_STRING COMPOUND_TEXT TEXT STRING))
-
-(require 'yaml-mode)
-(add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode))
-
-(require 'web-mode)
-(add-to-list 'auto-mode-alist '("\\.phtml\\'" . web-mode))
-(add-to-list 'auto-mode-alist '("\\.tpl\\.php\\'" . web-mode))
-(add-to-list 'auto-mode-alist '("\\.jsp\\'" . web-mode))
-(add-to-list 'auto-mode-alist '("\\.as[cp]x\\'" . web-mode))
-(add-to-list 'auto-mode-alist '("\\.erb\\'" . web-mode))
-(add-to-list 'auto-mode-alist '("\\.mustache\\'" . web-mode))
-(add-to-list 'auto-mode-alist '("\\.djhtml\\'" . web-mode))
-(add-to-list 'auto-mode-alist '("\\.html?\\'" . web-mode))
-
-(setq web-mode-style-padding 4)
-(setq web-mode-script-padding 2)
-
-(setq js-indent-level 2)
-(setq css-indent-offset 2)
-(setq scss-indent-offset 2)
